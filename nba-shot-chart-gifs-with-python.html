@@ -263,7 +263,7 @@ Sam Lau's Blog            </a>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="NBA-Shot-Chart-GIFs-with-Python---Steph-Curry">NBA Shot Chart GIFs with Python - Steph Curry<a class="anchor-link" href="#NBA-Shot-Chart-GIFs-with-Python---Steph-Curry">&#182;</a></h1><p>In this notebook, I'll go through how to create GIFs in Python. We'll be using the Shot Charts for Stephen Curry of the Golden State Warriors as our sequence of images.</p>
+<p>In this notebook, I'll go through how to create GIFs in Python. We'll be using the Shot Charts for Stephen Curry of the Golden State Warriors as our sequence of images.</p>
 <h3 id="Credits">Credits<a class="anchor-link" href="#Credits">&#182;</a></h3><ul>
 <li>Special thanks goes to go Savvast Jortjoglou for making an <a href="http://savvastjortjoglou.com/nba-shot-sharts.html">ipynb notebook</a> that shows you how to make nba shot charts in python, and for making a <a href="https://github.com/savvastj/nbaShotCharts">python module</a> that shows you how to access the data and plot it. In this notebook, we'll be using this module to draw our courts.</li>
 </ul>
@@ -579,7 +579,7 @@ Sam Lau's Blog            </a>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">player_pic</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s">&quot;../../../steph_curry/201939.png&quot;</span><span class="p">)</span>
@@ -1483,7 +1483,7 @@ PQ4VUlbQ41AhZQU9Dv8LEq568VHoRVkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">matplotlib.offsetbox</span> <span class="kn">import</span> <span class="n">OffsetImage</span><span class="p">,</span> <span class="n">AnnotationBbox</span>
@@ -1526,7 +1526,7 @@ PQ4VUlbQ41AhZQU9Dv8LEq568VHoRVkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">shot_chart_plot</span><span class="p">(</span><span class="n">shots</span><span class="p">)</span>
@@ -2874,7 +2874,7 @@ iugAAAAAEFX/H/0AErzL9LNAAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">shots</span><span class="p">[</span><span class="s">&#39;MINUTES&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">shots</span><span class="p">[</span><span class="s">&#39;PERIOD&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="mi">12</span> <span class="o">-</span> <span class="n">shots</span><span class="p">[</span><span class="s">&#39;MINUTES_REMAINING&#39;</span><span class="p">])</span>
@@ -2889,7 +2889,7 @@ iugAAAAAEFX/H/0AErzL9LNAAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[9]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -2947,7 +2947,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">shots</span><span class="p">[</span><span class="s">&#39;MINUTES_G&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">shots</span><span class="p">[</span><span class="s">&#39;MINUTES&#39;</span><span class="p">],</span> 
@@ -2965,7 +2965,7 @@ dtype: int64</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[11]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[10]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -2998,7 +2998,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># build a list of unique group values</span>
@@ -14281,7 +14281,7 @@ AICliA4AAAAAlvr/BPa3T924nyEAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">chart_list</span>
@@ -14295,7 +14295,7 @@ AICliA4AAAAAlvr/BPa3T924nyEAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[12]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -14361,7 +14361,7 @@ AICliA4AAAAAlvr/BPa3T924nyEAAAAASUVORK5CYII=
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">IPython.display</span> <span class="kn">as</span> <span class="nn">IPdisplay</span>
 
-<span class="n">IPdisplay</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&quot;http://i.imgur.com/gWjdPVU.gif&quot;</span><span class="p">)</span>
+<span class="n">IPdisplay</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="s">&quot;../../../steph_curry/shots.gif&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14434,6 +14434,23 @@ AICliA4AAAAAlvr/BPa3T924nyEAAAAASUVORK5CYII=
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
 <script src="./theme/js/respond.min.js"></script>
 
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-68448402-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics Code -->
 
 </body>
 </html>
